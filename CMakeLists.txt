@@ -5,6 +5,8 @@ project(project)
 add_compile_options(-g)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_BUILD_TYPE Debug)
+set(OpenGL_GL_PREFERENCE GLVND)
 
 file(GLOB SRCS src/*.c)
 add_executable(${PROJECT_NAME} ${SRCS})
